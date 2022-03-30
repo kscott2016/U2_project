@@ -1,6 +1,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
+h1{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color:#ffffff;
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 50px;
+}
+
 header{
 
     display: flex;
@@ -13,14 +25,30 @@ img.logo{
 }
 
 img.main-image{
-    max-width: 1000px;
+
+    width: 60%;
+    display:block;
+   
 }
 
 nav{
     align:right;
 }
 
-a.navlink{
+div.intro-section{
+    display:flex;
+    background-color: #e6001e;
+    margin: 50px auto;
+    border: 10px solid #e6001e;
+}
+
+div.intro-section-text>p{
+
+    color:#ffffff;
+    padding:20px;
+}
+
+a.navlink, .character-button{
 
     background:#e6001e;
     color: #ffffff;
@@ -29,14 +57,52 @@ a.navlink{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-decoration: none;
+    transition: 500ms linear;
+}
+
+a.navlink:hover{
+    padding:15px 35px;
+}
+
+input{
+    padding: 10px 30px;
+    border:transparent;
+    border-radius: 50px;
+    font-size: 1.5em;
+    min-width: 300px;
+}
+
+body > div:nth-child(3){
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+div.amiiboSelector{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border:solid 2px #009beb;
+    border-radius: 50px;
+}
+
+.character-button{
+    background-color:#009beb;
+    border:none;
+    font-size: 1.5em;
 }
 
 body{
 
     padding: 0 100px;
+    
 }
 
-nav{
+div.main-section-text{
+
+    background:#e6001e;
 
 }
 
