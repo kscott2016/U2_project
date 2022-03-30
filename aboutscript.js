@@ -7,10 +7,10 @@ factChoices.addEventListener('click', async () => {
     //if correct
     if(factChoices.classList.contains('correct')){
 
-        //console.log("TRUE")
+       
         factChoices.innerHTML="CORRECT"
         factChoices.classList.add('correct-fact')
-    }
+    }  
 
     //not correct
     else{
