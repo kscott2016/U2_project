@@ -39,11 +39,38 @@ button.addEventListener('click', async () => {
         
    // }
 
+   switch (`${gameSeries}`){
 
+    case 'Pokemon':
+        document.getElementById("series-logo").src = 'img/logos/Pokemon_logo.png'
+        break;
 
-    //let pic = response.data.url
-    //let dogPic =  response.data.message
-    //let newChar = (response.data[rando]).toString
-    //imageDiv.innerHTML = `<img src=${pic} />`
-    //factDiv.innerHTML = `${newFact}`
+    case 'Super Mario':
+        document.getElementById("series-logo").src = 'img/logos/Super_Mario_logo.svg'
+        break;
+
+    case 'Mario Sports Superstars':
+        document.getElementById("series-logo").src = 'img/logos/MarioSportsSuperstars_logo.png'
+        break;
+
+    case 'Metroid':
+        document.getElementById("series-logo").src = 'img/logos/Metroid_logo.png'
+        break;
+
+    case 'Animal Crossing':
+        document.getElementById("series-logo").src = 'img/logos/Animal-Crossing-Logo.png'
+        break;
+
+  case 'The Legend of Zelda':
+        document.getElementById("series-logo").src = 'img/logos/Zelda_Logo.png'
+        break;
+
+  case 'Kirby':
+        document.getElementById("series-logo").src = 'img/logos/Kirby-Logo.png'
+        break;
+
+    default:
+        document.getElementById("series-logo").src = 'img/logos/nintendobg.png'
+
+}
 })

@@ -8,7 +8,9 @@ h1{
 }
 
 h2{
-    text-align: center;;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
 }
 
 p{
@@ -107,6 +109,10 @@ body{
     
 }
 
+#series-logo{
+    max-height:100px;
+}
+
 span.descriptor{
     font-weight: bold;
 }
@@ -135,11 +141,23 @@ div.character-details{
 
 div.image-section{
 
-    width: 30%;
+    width: 40%;
 }
 
+div.image-section>img{
+
+    width:100%;
+    border:#e6001e solid 4px;
+    border-radius: 50px;
+    padding: 20px;
+
+}
+
+
 body > div.character-block > div > div:nth-child(2){
-    width:70%;
+    width:60%;
+    padding: 25px;
+    text-align: center;
 }
 
 .game-series-bg-mario{
