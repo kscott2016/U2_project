@@ -191,4 +191,29 @@ div.img-container{
     min-height: 300px;
 }
 
+#other-amiibos-list {
+
+    max-width: 300px;
+    max-width: 300px;
+    margin: auto;
+    padding-left: 0;
+}
+
+h3.other-amibos-header{
+    display: none;
+}
+
+#other-amiibos-list > li{
+    list-style: none;
+    min-width: 100px;
+    background-color: #fff;
+    border-radius: 50px;
+    border: 2px solid #CACACA;
+    list-style: none;
+    text-align: center;
+    margin: 10px 20px;
+    padding: 8px;
+    font-size: 16px;
+
+}
 

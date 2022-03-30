@@ -14,9 +14,16 @@ button.addEventListener('click', async () => {
     
     //console.log(response.data)
     let matchQueryName = "https://amiiboapi.com/api/amiibo?character="+ characterInput.value
+    
 
     let matches = await axios.get(matchQueryName)
     console.log(matches);
+    
+    if (matchQueryName.status === 404 ){
+
+        console.log("NO MATCHES")
+
+    }
 
    // if (matches.data.amiibo.length === 1 ){
         //if there's just one amiibo for the selected character, do this
@@ -36,7 +43,6 @@ button.addEventListener('click', async () => {
         document.querySelector(".game-series").innerHTML= `<span class="descriptor">Game Series:</span> ${gameSeries}`;
         document.querySelector(".amiibo-type").innerHTML= `<span class="descriptor">Amiibo Type:</span> ${amiiboType}`;
 
-        
    // }
 
    switch (`${gameSeries}`){
@@ -72,5 +78,45 @@ button.addEventListener('click', async () => {
     default:
         document.getElementById("series-logo").src = 'img/logos/nintendobg.png'
 
-}
+    }
+
+    if(matches.data.amiibo.length >1){
+
+        document.querySelector(".other-amibos-header").style.display= 'block';
+
+
+        console.log("MULTIPLE");
+        let amiiboList = document.querySelector("#other-amiibos-list");
+        
+        for (let i = 1; i< matches.data.amiibo.length; i++ ){
+
+            let amiibo_li = document.createElement('li')
+            amiibo_li.classList.add('amiibo_other')
+            amiibo_li.innerText = matches.data.amiibo[i].name
+            amiiboList.append(amiibo_li)
+        }
+        
+    }
 })
+
+let factChoices = document.querySelector('li')
+
+factChoices.addEventListener('click', async () => {
+    console.log("CLICKED")
+
+    //if correct
+    if(factChoices.classList.contains('correct')){
+
+        console.log("TRUE")
+    }
+
+    //not correct
+    else{
+
+    }
+
+})
+
+
+
+
