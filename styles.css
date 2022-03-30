@@ -178,6 +178,17 @@ ul.amiibo-facts{
     display: flex;
     flex-wrap: wrap;
     margin-top:50px;
+    justify-content: center;
+}
+
+div.img-container{
+
+    display: flex;
+    justify-content: center;
+    background-image: url('img/H2x1_Amiibo_main_image1600w.jpeg');
+    background-size: cover;
+    opacity: 0.5;
+    min-height: 300px;
 }
 
 
