@@ -2,7 +2,6 @@ const button = document.querySelector('button')
 const characterInput = document.querySelector('input')
 const imageDiv = document.querySelector('div')
 
-const factDiv = document.getElementsByClassName('new_fact')
 let rando = Math.floor(Math.random() * 200);
 
 button.addEventListener('click', async () => {
