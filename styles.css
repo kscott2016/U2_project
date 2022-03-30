@@ -7,6 +7,10 @@ h1{
     color:#ffffff;
 }
 
+h2{
+    text-align: center;;
+}
+
 p{
     text-align: center;
     font-size: 20px;
@@ -69,7 +73,7 @@ input{
     border:transparent;
     border-radius: 50px;
     font-size: 1.5em;
-    min-width: 300px;
+    width: 100%;
 }
 
 body > div:nth-child(3){
@@ -86,12 +90,15 @@ div.amiiboSelector{
     background-color: #ffffff;
     border:solid 2px #009beb;
     border-radius: 50px;
+    display: flex;
+    min-width: 600px;
 }
 
 .character-button{
     background-color:#009beb;
     border:none;
     font-size: 1.5em;
+    min-width: 200px;
 }
 
 body{
@@ -100,10 +107,39 @@ body{
     
 }
 
+span.descriptor{
+    font-weight: bold;
+}
+
 div.main-section-text{
 
     background:#e6001e;
 
+}
+
+div.character-block{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+div.character-details{
+
+    width: 100%;
+    display: flex;
+
+}
+
+div.image-section{
+
+    width: 30%;
+}
+
+body > div.character-block > div > div:nth-child(2){
+    width:70%;
 }
 
 .game-series-bg-mario{
