@@ -222,7 +222,7 @@ h3.other-amibos-header{
      color:#64ee30;
  }
 
- li.correct.facts.wrong-fact{
+ li.nope.facts.wrong-fact{
     border: 2px solid #e6001e;
     color:#e6001e;
 }
