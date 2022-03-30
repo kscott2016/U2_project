@@ -144,7 +144,7 @@ div.image-section{
     width: 40%;
 }
 
-div.image-section>img{
+#character-image{
 
     width:100%;
     border:#e6001e solid 4px;
@@ -160,36 +160,24 @@ body > div.character-block > div > div:nth-child(2){
     text-align: center;
 }
 
-.game-series-bg-mario{
-
-
+/*ABOUT PAGE*/
+li.facts {
+    min-width: 300px;
+    background-color: #fff;
+    border-radius: 50px;
+    border: 2px solid #CACACA;
+    list-style: none;
+    text-align: center;
+    margin: 10px 20px;
+    padding: 15px;
+    font-size: 22px;
 }
 
-.game-series-bg-mariosports{
+ul.amiibo-facts{
 
-    
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:50px;
 }
-
-.game-series-bg-kirby{
-
-    
-}
-
-.game-series-bg-loz{
-
-}
-
-.game-series-bg-metroid{
-
-}
-
-.game-series-bg-pokemon{
-
-}
-
-.game-series-bg-animal-crossing{
-
-}
-
 
 
